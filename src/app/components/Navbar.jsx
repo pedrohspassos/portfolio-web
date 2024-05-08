@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -24,9 +25,14 @@ const navLinks = [
 
 export const Navbar = () => {
   return (
-    <nav>
-      <div className="flex flex-wrap items-center justify-between mx-auto p-8">
-        <Link href={"/"} className="text-5xl text-white font-semibold">
+    <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
+      <div className="flex flex-wrap items-center justify-between mx-auto px-9 py-4">
+        <Link
+          href={"/"}
+          className="text-2xl md:text-5xl text-white font-semibold"
+        >
+          LOGO
+          {/* LOGO
           <div className=" w-[120px] h-[90px] rounded-full relative">
             <Image
               src="/images/hero-image2.png"
@@ -35,21 +41,22 @@ export const Navbar = () => {
               width={100}
               height={100}
             />
-          </div>
+            </div>
+             */}
         </Link>
+
         <div className="menu md:block md:w-auto" id="navbar">
-          <ul>
-            <li>
-              <Link
-                href={"#about"}
-                className="black py-2 pl-3 pr-4 text-[ADB7BE] sm:text-xl rounded md:p-0 hover:text-white"
-              >
-                About
-              </Link>
-            </li>
+          <ul className="font-medium flex p-4 md:p-0  rounded-lg flex-row md:space-x-8 mt-0">
+            {navLinks.map((link, index) => (
+              <li key={index}>
+                <NavLink href={link.path} title={link.title} />
+              </li>
+            ))}
           </ul>
         </div>
       </div>
     </nav>
   );
 };
+
+export default Navbar;
