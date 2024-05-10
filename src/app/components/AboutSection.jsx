@@ -8,22 +8,28 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
-        <li>JavaScript</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>C++</li>
-        <li>C</li>
-        <li>Java</li>
-        <li>Python</li>
-        <li>R</li>
-        <li>PostgreSQL</li>
-        <li>MySQL</li>
-        <li>Git</li>
-        <li>JavaScript</li>
-        <li>Power BI</li>
-        <li>Agile Methodology </li>
-      </ul>
+      <div className="flex justify-between ">
+        <ul className="list-disc pl-2">
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>C++</li>
+          <li>C</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>React</li>
+
+        </ul>
+
+        <ul className="list-disc pl-2 px-44  " > 
+          <li>R</li>
+          <li>PostgreSQL</li>
+          <li>MySQL</li>
+          <li>Git</li>
+          <li>JavaScript</li>
+          <li>Power BI</li>
+          <li>Agile Methodology </li></ul>
+      </div>
     ),
   },
   {
