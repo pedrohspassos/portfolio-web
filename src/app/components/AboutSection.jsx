@@ -97,6 +97,7 @@ const AboutSection = () => {
             working as part of a team, cooperating with everyone and helping in
             the best way possible, with great satisfaction in teaching and
             learning. Learning is part of my daily routine and challenges always
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
             keep me motivated to find the best solutions. I'm looking for an
             opportunity to internship in systems development , where I can
             develop my technical knowledge and grow together with the company
