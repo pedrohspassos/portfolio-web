@@ -1,7 +1,8 @@
 "use client";
-import React, { useState, useTransition } from "react";
+import React, { useState, useTransition, useRef } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
+import { motion, useInView } from "framer-motion";
 
 const TAB_DATA = [
   {
@@ -18,17 +19,17 @@ const TAB_DATA = [
           <li>Java</li>
           <li>Python</li>
           <li>React</li>
-
         </ul>
 
-        <ul className="list-disc pl-2 px-44  " > 
+        <ul className="list-disc pl-2 px-44  ">
           <li>R</li>
           <li>PostgreSQL</li>
           <li>MySQL</li>
           <li>Git</li>
           <li>JavaScript</li>
           <li>Power BI</li>
-          <li>Agile Methodology </li></ul>
+          <li>Agile Methodology </li>
+        </ul>
       </div>
     ),
   },
@@ -64,6 +65,8 @@ const TAB_DATA = [
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
   const handleTabChange = (id) => {
     startTransition(() => {
@@ -71,12 +74,22 @@ const AboutSection = () => {
     });
   };
 
+  const cardVariants = {
+    initial: { y: 50, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+  };
+
   return (
-    <section className="text-white">
-      <div className="gap-8 items-center py-8 px-4 xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-16">
+    <section id="about" ref={ref} className="text-white py-6">
+      <motion.div
+        variants={cardVariants}
+        initial="initial"
+        animate={isInView ? "animate" : "initial"}
+        transition={{ duration: 0.3, delay: 0.4 }}
+        className="gap-8 items-center py-8 px-4 xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-16"
+      >
         <Image src="/images/about-image.png" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-white texxt-base md:text-lg">
             Computer Science student at University of São Paulo, looking for
@@ -121,7 +134,7 @@ const AboutSection = () => {
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

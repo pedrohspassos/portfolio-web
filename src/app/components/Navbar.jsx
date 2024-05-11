@@ -31,18 +31,18 @@ export const Navbar = () => {
           href={"/"}
           className="text-2xl md:text-5xl text-white font-semibold"
         >
-          LOGO
-          {/* LOGO
-          <div className=" w-[120px] h-[90px] rounded-full relative">
+          
+          
+          <div className=" w-[140px] h-[50px] rounded-full relative">
             <Image
-              src="/images/hero-image2.png"
+              src="/images/logo-marca.png"
               alt="hero image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={100}
-              height={100}
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/3 "
+              width={200}
+              height={200}
             />
             </div>
-             */}
+             
         </Link>
 
         <div className="menu md:block md:w-auto" id="navbar">

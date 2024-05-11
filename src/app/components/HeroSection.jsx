@@ -11,7 +11,7 @@ const HeroSection = () => {
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.4 }}
           className="col-span-7 place-self-center place-items-center grid lg:place-items-start sm:text-left justify-self-start "
         >
           <h1 className="text-white max-w-2xl mb-4 lg:text-6xl lg:leading-normal text-4xl font-extrabold">
@@ -45,9 +45,11 @@ const HeroSection = () => {
               Hire Me
             </button>
             <button className="m-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 px-1 py-1  text-white rounded-full">
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                Download CV
-              </span>
+              <a href="/Teamplate-Curriculo.pdf" download>
+                <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                  Download CV
+                </span>
+              </a>
             </button>
           </div>
         </motion.div>
@@ -56,12 +58,12 @@ const HeroSection = () => {
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7 }}
-            className="bg-[#181818] lg:w-[400px] lg:h-[400px] w-[250px] h-[250px] rounded-full relative"
+            className="bg-[#181818] lg:w-[350px] lg:h-[350px] w-[250px] h-[250px] rounded-full relative"
           >
             <Image
-              src="/images/hero-image2.png"
+              src="/images/FotoPerfil.jpeg"
               alt="hero image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full"
               width={300}
               height={300}
             />
