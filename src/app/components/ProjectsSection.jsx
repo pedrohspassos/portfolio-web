@@ -7,7 +7,7 @@ import { animate, motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
+    title: "Title Project 1",
     description: "Project 1 description",
     image: "/images/projects/1.png",
     tag: ["All", "Web Projects"],
@@ -16,7 +16,7 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
+    title: "Title Project 2",
     description: "Project 2 description",
     image: "/images/projects/2.png",
     tag: ["All", "Web Projects"],
@@ -25,7 +25,7 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "E-commerce Application",
+    title: "Title Project 3",
     description: "Project 3 description",
     image: "/images/projects/3.png",
     tag: ["All", "Web Projects"],
@@ -34,7 +34,7 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "Food Ordering Application",
+    title: "Title Project 4",
     description: "Project 4 description",
     image: "/images/projects/4.png",
     tag: ["All", "Data Projects"],
@@ -43,8 +43,8 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
+    title: "Title Project 5",
+    description: "Project 5 description",
     image: "/images/projects/5.png",
     tag: ["All", "Data Projects"],
     gitUrl: "https://github.com/pedrohspassos",
@@ -52,8 +52,8 @@ const projectsData = [
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
+    title: "Title Project 6",
+    description: "Project 6 description",
     image: "/images/projects/6.png",
     tag: ["All", "Web Projects"],
     gitUrl: "https://github.com/pedrohspassos",
@@ -81,7 +81,8 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-3 mb-8 md:mb-12">
+      
+      <h2 className="text-center text-5xl font-bold mb-5 mt-20 text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-700">
         My Projects
       </h2>
 

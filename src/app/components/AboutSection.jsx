@@ -80,7 +80,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section id="about" ref={ref} className="text-white py-6">
+    <section id="about" ref={ref} className="text-white py-8">
       <motion.div
         variants={cardVariants}
         initial="initial"
@@ -88,17 +88,17 @@ const AboutSection = () => {
         transition={{ duration: 0.3, delay: 0.4 }}
         className="gap-8 items-center py-8 px-4 xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-16"
       >
-        <Image src="/images/about-image.png" width={500} height={500} />
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-white texxt-base md:text-lg">
+        <Image className="rounded-xl" src="/images/about-image.png" width={500} height={500}/>
+        <div className="mt-3 md:mt-0 text-left flex flex-col h-full">
+          <h2 className="text-5xl font-bold mb-5 text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">About Me</h2>
+          <p className="text-white text-base md:text-lg">
             Computer Science student at University of São Paulo, looking for
             opportunity to gain experience in other technologies. I always
             working as part of a team, cooperating with everyone and helping in
             the best way possible, with great satisfaction in teaching and
             learning. Learning is part of my daily routine and challenges always
-            {/* eslint-disable-next-line react/no-unescaped-entities */}
-            keep me motivated to find the best solutions. I'm looking for an
+            {/* eslint-disable-next-line react/no-unescaped-entities */}  keep me motivated to find the best solutions. 
+            I'm looking for an
             opportunity to internship in systems development , where I can
             develop my technical knowledge and grow together with the company
             and my co-workers.

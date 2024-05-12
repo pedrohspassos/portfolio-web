@@ -24,7 +24,7 @@ const HeroSection = () => {
               sequence={[
                 "Pedro Passos",
                 1000,
-                "Undergraduate Student at USP",
+                "Student at USP",
                 1000,
                 "Computer Scientist",
                 1000,
@@ -42,24 +42,29 @@ const HeroSection = () => {
             development.
           </p>
           <div>
-            <button className="bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-200 text-white px-6 py-3 rounded-full mr-4">
-              Hire Me
-            </button>
-            <button className="m-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 px-1 py-1  text-white rounded-full">
+            <a
+              href="https://www.linkedin.com/in/pedrohspassos/"
+              target="_blank"
+            >
+              <button className="bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-200 text-white px-6 py-3 rounded-full mr-4">
+                Hire Me
+              </button>
+            </a>
+            <button className="m-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 px-1 py-1 text-white rounded-full">
               <a href="/Teamplate-Curriculo.pdf" download>
-                <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                <span className="block bg-[#121212] hover:bg-slate-900 rounded-full px-5 py-2">
                   Download CV
                 </span>
               </a>
             </button>
           </div>
         </motion.div>
-        <div className="col-span-5 place-self-center mt-4 lg:mt-0">
+        <div className="col-span-5 place-self-center mt-4 lg:mt-0 ">
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7 }}
-            className="bg-[#181818] lg:w-[350px] lg:h-[350px] w-[250px] h-[250px] rounded-full relative"
+            className=" bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500  lg:w-[320px] lg:h-[320px] w-[250px] h-[250px] rounded-full relative"
           >
             <Image
               src="/images/FotoPerfil.jpeg"
