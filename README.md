@@ -5,8 +5,8 @@ Esse repositorio visa mostrar um pouco do projeto desenvolvido para a matéria p
 
 ## Demonstração
 
-![Preview](https://github.com/pedrohspassos/pagina-perfil/assets/117874197/d79968e8-3721-417f-bd19-857859775f38)
-
+![Screenshot_2](https://github.com/pedrohspassos/portfolio-web/assets/117874197/6424be52-fb8e-4965-9491-680e2c3d83ad)
+##
 ## 🛠 Habilidades
 - | Javascript |  
 - | HTML5 |
