@@ -51,7 +51,7 @@ const HeroSection = () => {
               </button>
             </a>
             <button className="m-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 px-1 py-1 text-white rounded-full">
-              <a href="/Teamplate-Curriculo.pdf" download>
+              <a href="/Curriculum_vitae.pdf" download>
                 <span className="block bg-[#121212] hover:bg-slate-900 rounded-full px-5 py-2">
                   Download CV
                 </span>
