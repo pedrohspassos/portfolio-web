@@ -15,6 +15,8 @@ Esse repositorio visa mostrar um pouco do projeto desenvolvido para a matéria p
 - | React |
 - | Vue.js | 
 
+## Deploy
+- Deploy da Aplicação: https://portfolio-web-theta-one.vercel.app
 
 ## Autores
 
